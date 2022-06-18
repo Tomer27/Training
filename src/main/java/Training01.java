@@ -16,6 +16,10 @@ public class Training01 {
     @BeforeClass
     public static void Before() throws Exception {
 
+        System.out.println("\n==========================");
+        System.out.println("Before Class");
+        System.out.println("==========================\n");
+
         System.setProperty("web-driver.chrome.driver", "C:/Users/Tomer/Desktop/Selenium/chromedriver.exe");
 
         WebDriverManager.chromedriver().setup();
@@ -30,6 +34,11 @@ public class Training01 {
     @Test
     public static void Test01() throws Exception {
 
+        System.out.println("\n==========================");
+        System.out.println("Test 01");
+        System.out.println("==========================\n");
+
+
         Thread.sleep(2000);
 
         WebElement header = driver.findElement(By.id("swm-link"));
@@ -43,6 +52,11 @@ public class Training01 {
     @AfterClass
     public static void After() throws Exception {
 
+        System.out.println("\n==========================");
+        System.out.println("After Class");
+        System.out.println("==========================\n");
+
+        System.out.println("Closing Chrome");
         driver.quit();
     }
 }
