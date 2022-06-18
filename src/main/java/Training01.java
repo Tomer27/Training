@@ -38,9 +38,6 @@ public class Training01 {
         System.out.println("Test 01");
         System.out.println("==========================\n");
 
-
-        Thread.sleep(2000);
-
         WebElement header = driver.findElement(By.id("swm-link"));
 
         String headerText = header.getText().trim();
