@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -28,6 +29,8 @@ public class Training01 {
 
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
+
+        System.out.println("Opening Chrome");
 
         driver.get("https://www.amazon.com/");
         driver.manage().window().maximize();
@@ -72,10 +75,6 @@ public class Training01 {
         }else {
             System.err.println("Searched word is not in the 1st result");
         }
-
-
-
-
     }
 
     @AfterClass
