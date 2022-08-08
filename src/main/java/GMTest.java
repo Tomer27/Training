@@ -19,6 +19,8 @@ import java.io.File;
 public class GMTest {
 
     public static ChromeDriver driver;
+
+    public static String driverLocalPath = "C:/Users/Tomer/Desktop/Selenium/chromedriver.exe"; // change to your local chromedriver path
     public static String CityName = "Rome";
     public static String URL = "https://www.google.com/maps";
     public static int screenshots = 3;
@@ -26,7 +28,7 @@ public class GMTest {
     @BeforeTest
     public static void BeforeTest() throws Exception {
 
-        System.setProperty("web-driver.chrome.driver", "C:/Users/Tomer/Desktop/Selenium/chromedriver.exe");
+        System.setProperty("web-driver.chrome.driver", driverLocalPath);
 
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
