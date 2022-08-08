@@ -57,7 +57,7 @@ public class GMTest {
 
         for (int i=0; i<screenshots; i++) {
 
-            String pathName = "C:\\Users\\Tomer\\Desktop\\SelPics//ScreenShot" + (i+1) + ".png";
+            String pathName = "C:\\Users\\Tomer\\Desktop\\SelPics//ScreenShot" + (i+1) + ".png"; // enter local path to save the screenshots
 
             System.out.println("Taking screenshot #" + (i+1));
 
