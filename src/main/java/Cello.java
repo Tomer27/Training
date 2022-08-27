@@ -31,7 +31,6 @@ public class Cello {
         driver.get(URL);
         driver.manage().window().maximize();
         System.out.println("Opening Chrome on " + URL);
-        System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
         Thread.sleep(2000);
 
     }
